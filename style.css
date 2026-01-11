@@ -1,0 +1,90 @@
+body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar-brand { font-weight: 600; }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border: none;
+        }
+        .card-header {
+            border-radius: 10px 10px 0 0 !important;
+            font-weight: 600;
+        }
+        .memory-visual {
+            height: 300px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            overflow-y: auto;
+        }
+        .memory-block {
+            border: 1px solid #000;
+            text-align: center;
+            font-size: 12px;
+            margin: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .memory-block:hover {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        .buffer-container {
+            min-height: 150px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #f8f9fa;
+        }
+        .buffer-slot {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            border: 2px solid #6c757d;
+            border-radius: 8px;
+            margin: 5px;
+            text-align: center;
+            line-height: 60px;
+            font-weight: bold;
+            font-size: 20px;
+            background-color: white;
+        }
+        .buffer-slot.filled {
+            background-color: #28a745;
+            color: white;
+        }
+        .buffer-slot.empty {
+            background-color: #e9ecef;
+            color: #6c757d;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+        .running { animation: pulse 1s infinite; }
+        .file-tree {
+            font-family: 'Courier New', monospace;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .file-item {
+            padding: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .file-item:hover {
+            background-color: #e9ecef;
+        }
